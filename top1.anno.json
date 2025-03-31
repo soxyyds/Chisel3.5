@@ -1,0 +1,20 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~top1|top1>io_out",
+    "sources":[
+      "~top1|top1>io_in0",
+      "~top1|top1>io_in1",
+      "~top1|top1>io_in2",
+      "~top1|top1>io_in3"
+    ]
+  }
+]
