@@ -1,0 +1,92 @@
+$date
+2025-04-11T02:25+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module PipeCtrl $end
+ $var wire 1 ! io_BjEn1 $end
+ $var wire 1 " io_RstingBlk $end
+ $var wire 1 # io_MultiMemBlk0 $end
+ $var wire 1 $ BjEnVld1 $end
+ $var wire 1 % io_DmissVld $end
+ $var wire 1 & io_DeEXFls $end
+ $var wire 1 ' PreMissP0 $end
+ $var wire 1 ( io_BjEn0 $end
+ $var wire 1 ) Blk1 $end
+ $var wire 1 * io_PreTaken0 $end
+ $var wire 1 + io_BjTypeVld0 $end
+ $var wire 1 , io_DatHzdBlkP1 $end
+ $var wire 1 - PreMiss $end
+ $var wire 1 . DeExBlk1 $end
+ $var wire 1 / BjEnVld0 $end
+ $var wire 1 0 io_ExMem1Fls1 $end
+ $var wire 1 1 clock $end
+ $var wire 1 2 io_IoBlk $end
+ $var wire 1 3 Blk0 $end
+ $var wire 1 4 io_MultiMemBlk1 $end
+ $var wire 1 5 io_DatHzdBlkP0 $end
+ $var wire 1 6 PreMissP1 $end
+ $var wire 1 7 io_FeDeFls $end
+ $var wire 1 8 io_DataBlk1 $end
+ $var wire 1 9 DeExBlk0 $end
+ $var wire 1 : io_ImissVld $end
+ $var wire 1 ; reset $end
+ $var wire 1 < Freeze $end
+ $var wire 1 = io_ExMem1Fls0 $end
+ $var wire 1 > io_PreTaken1 $end
+ $var wire 1 ? io_FeStl $end
+ $var wire 1 @ io_DataBlk0 $end
+ $var wire 1 A io_BufStl $end
+ $var wire 1 B io_FeDeStl_MemMem2Stl_Mem2WbStl $end
+ $var wire 1 C io_BjTypeVld1 $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0%
+0C
+0;
+0&
+0<
+0'
+0=
+0>
+06
+0!
+07
+0"
+08
+0#
+09
+0:
+02
+03
+04
+05
+0-
+0.
+0/
+00
+0(
+01
+0)
+0?
+0*
+0@
+0+
+0A
+0,
+0$
+0B
+$end
+#0
+1;
+#1
+11
+#6
+01
+0;
