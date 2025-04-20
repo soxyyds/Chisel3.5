@@ -9,15 +9,11 @@
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~ALU|ALU>io_branch_out",
+    "sink":"~ALU|ALU>io_is_store",
     "sources":[
       "~ALU|ALU>io_valid_in",
       "~ALU|ALU>io_flush_in",
-      "~ALU|ALU>io_is_jump",
-      "~ALU|ALU>io_is_branch",
-      "~ALU|ALU>io_op_in",
-      "~ALU|ALU>io_src1_in",
-      "~ALU|ALU>io_src2_in"
+      "~ALU|ALU>io_instr_id"
     ]
   },
   {
@@ -25,10 +21,8 @@
     "sink":"~ALU|ALU>io_jump_addr",
     "sources":[
       "~ALU|ALU>io_valid_in",
-      "~ALU|ALU>io_is_jump",
       "~ALU|ALU>io_flush_in",
-      "~ALU|ALU>io_is_branch",
-      "~ALU|ALU>io_op_in",
+      "~ALU|ALU>io_instr_id",
       "~ALU|ALU>io_pc_in",
       "~ALU|ALU>io_imm_in",
       "~ALU|ALU>io_src1_in",
@@ -41,9 +35,29 @@
     "sources":[
       "~ALU|ALU>io_valid_in",
       "~ALU|ALU>io_flush_in",
-      "~ALU|ALU>io_is_jump",
-      "~ALU|ALU>io_pc_in",
-      "~ALU|ALU>io_op_in",
+      "~ALU|ALU>io_instr_id",
+      "~ALU|ALU>io_src1_in",
+      "~ALU|ALU>io_src2_in",
+      "~ALU|ALU>io_imm_in",
+      "~ALU|ALU>io_pc_in"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~ALU|ALU>io_is_load",
+    "sources":[
+      "~ALU|ALU>io_valid_in",
+      "~ALU|ALU>io_flush_in",
+      "~ALU|ALU>io_instr_id"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~ALU|ALU>io_branch_out",
+    "sources":[
+      "~ALU|ALU>io_valid_in",
+      "~ALU|ALU>io_flush_in",
+      "~ALU|ALU>io_instr_id",
       "~ALU|ALU>io_src1_in",
       "~ALU|ALU>io_src2_in"
     ]
